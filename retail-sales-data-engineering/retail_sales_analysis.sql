@@ -1,35 +1,38 @@
+-- Retail Sales Data Engineering Project
+-- SQL Analytics Queries
 
--- 1. Total sales revenue
+-- 1. Total Sales Revenue
 SELECT
-    SUM(quantity * unit_price) AS total_sales
-FROM retail_sales;
+    SUM(total_sales) AS total_revenue
+FROM retail_sales_gold;
 
--- 2. Total number of orders
-SELECT
-    COUNT(DISTINCT order_id) AS total_orders
-FROM retail_sales;
-
--- 3. Sales by product category
+-- 2. Sales by Product Category
 SELECT
     category,
-    SUM(quantity * unit_price) AS total_sales
-FROM retail_sales
+    SUM(total_sales) AS total_sales
+FROM retail_sales_gold
 GROUP BY category
 ORDER BY total_sales DESC;
 
--- 4. Sales by region
+-- 3. Sales by Region
 SELECT
     region,
-    SUM(quantity * unit_price) AS total_sales
-FROM retail_sales
+    SUM(total_sales) AS total_sales
+FROM retail_sales_gold
 GROUP BY region
 ORDER BY total_sales DESC;
 
--- 5. Top-selling products by revenue
+-- 4. Total Quantity Sold
 SELECT
-    product,
-    SUM(quantity) AS total_quantity,
-    SUM(quantity * unit_price) AS total_revenue
-FROM retail_sales
-GROUP BY product
-ORDER BY total_revenue DESC;
+    SUM(total_quantity) AS total_quantity_sold
+FROM retail_sales_gold;
+
+-- 5. Sales by Category and Region
+SELECT
+    category,
+    region,
+    SUM(total_sales) AS total_sales,
+    SUM(total_quantity) AS total_quantity
+FROM retail_sales_gold
+GROUP BY category, region
+ORDER BY total_sales DESC;
