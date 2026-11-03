@@ -1,0 +1,11 @@
+category,region,total_sales,total_quantity,total_orders
+Accessories,East,5000,10,1
+Accessories,South,2500,5,1
+Accessories,West,4800,4,1
+Electronics,East,24000,2,1
+Electronics,North,55000,1,1
+Electronics,South,36000,3,1
+Electronics,West,110000,2,1
+Furniture,North,10500,3,1
+Furniture,South,8000,1,1
+Furniture,West,7000,2,1
