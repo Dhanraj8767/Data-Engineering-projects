@@ -91,4 +91,8 @@ The interactive dashboard provides insights into:
 ### 🎯 Project Objective
 To build a complete data pipeline, ensure data quality, perform SQL analysis and create an interactive Power BI dashboard for business decision-making.
 
+## 📊 Retail Sales Power BI Dashboard
+
+![Retail Sales Dashboard](Screenshot%202026-11-03%20134736.png)
+
 
