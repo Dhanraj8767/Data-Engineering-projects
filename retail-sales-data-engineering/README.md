@@ -50,10 +50,57 @@ retail-sales-data-engineering/
 ├── data/
 ├── notebooks/
 └── sql/
-```
+
+## 🛠️ Technologies Used
+
+- Python
+- PySpark
+- SQL
+- Azure Databricks
+- Delta Lake
+- Power BI
+- GitHub
+
+## 📂 Project Structure
+
+retail-sales-data-engineering/
+│
+├── notebooks/
+│   ├── 01_Bronze_Ingestion.py
+│   ├── 02_Silver_Transformation.py
+│   └── 03_Gold_Analytics.py
+│
+├── data/
+├── README.md
+└── requirements.txt
+
+## ⚙️ ETL Workflow
+
+1. Extract raw retail sales data.
+2. Load data into Bronze Layer.
+3. Clean and transform data in Silver Layer.
+4. Create aggregated datasets in Gold Layer.
+5. Connect Gold data to Power BI for reporting.
+
+## 🔍 Data Quality Checks
+
+- Null value validation
+- Duplicate record checks
+- Schema validation
+- Data consistency checks
+
+## 📊 Business Insights
+
+- Total Sales
+- Product-wise Sales
+- Customer-wise Sales
+- Sales Trends
+- Category-wise Performance
 
 ## 👨‍💻 Author
-**Dhanraj Jadhav**
+Dhanraj Jadhav
+
+Aspiring Data Engineer | Python | SQL | PySpark | Databricks
 
 GitHub: https://github.com/Dhanraj8767
 
